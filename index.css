@@ -1,0 +1,17 @@
+#crux {
+    margin-left: 12.5px;
+    margin-top: 5px;
+    width: 300px;
+    height: 400px;
+}
+
+#download-button {
+    margin-left: 90px;
+    color: rgb(14, 2, 2);
+    border-color: rgb(12, 6, 6);
+}
+
+body {
+    width: 325px;
+    height: 490px;
+}

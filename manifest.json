@@ -1,0 +1,31 @@
+{
+  "name": "Google Notes",
+  "description": "Collects all that is copied in a chrome browsing session into a downloadable text file",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "clipboardRead",
+    "downloads"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "oncopy.js"
+      ]
+    }
+  ],
+  "background": {
+    "persistent": true,
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "icon1.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "paper.png"
+  }
+}
